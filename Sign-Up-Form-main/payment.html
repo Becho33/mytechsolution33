@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" href="My.jpg">
+</head>
+
+<body>
+
+    <div class="mainscreen">
+
+        <!-- Creating top hero text part -->
+        <div class="toppart">
+            <div class="herotext">
+                <h1> <img src="My.jpg" alt="Logo" class="logo"></h1>
+                <div class="wrapper">
+                    <div class="static-text">I'm</div>
+                    <ul class="dynamic-text">
+                        <li><span> A CYBER MONK TOO📚💻</span></li>
+                    </ul>
+                </div>
+                <p>
+                    "Unlock Your Digital Journey: Dive into the World of Online Nomadism👊!!
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Creating bottom part form img and form -->
+    <div class="bottompart">
+        <!-- Image Part -->
+        <div class="imgpart">
+            <img src="Web-Development.jpg" class="heroimg" alt="">
+        </div>
+
+        <!-- Form Part -->
+        <div class="formpart">
+            <form id="paymentForm">
+                <h2>Payment Details</h2>
+
+                <!-- Price -->
+                <p class="price">Price: £333</p>
+
+                <!-- Card Number -->
+                <div class="form-group">
+                    <label for="card_number">Card Number</label>
+                    <input class="inputbox" id="card_number" name="card_number" type="text"
+                        placeholder="Enter your card number" required>
+                </div>
+
+                <!-- Expiry Date -->
+                <div class="form-group">
+                    <label for="expiry_date">Expiry Date</label>
+                    <input class="inputbox" id="expiry_date" name="expiry_date" type="text" placeholder="MM/YY"
+                        required>
+                </div>
+
+                <!-- Security Code -->
+                <div class="form-group">
+                    <label for="security_code">Security Code</label>
+                    <input class="inputbox" id="security_code" name="security_code" type="text" placeholder="CVV"
+                        required>
+                </div>
+
+                <!-- Card Name -->
+                <div class="form-group">
+                    <label for="card_name">Cardholder Name</label>
+                    <input class="inputbox" id="card_name" name="card_name" type="text"
+                        placeholder="Enter cardholder's name" required>
+                </div>
+
+                <button class="submit-button state-0" type="button" onclick="submitForm()">
+                    <span class="pre-state-msg">Submit Payment</span>
+                    <span class="current-state-msg hide">Sending...</span>
+                    <span class="done-state-msg hide">Done!</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <a href="https://github.com/pandeyom331"><i class="git fab fa-github fa-2x "></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100004398076666"><i class="git fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/solo_thinker_134/"><i class="git fab fa-instagram fa-2x"></i></a>
+        <a class="email" href="mailto:pandeyom305@gmail.com"><i class="git fas fa-envelope fa-2x"></i></a>
+        <p>Copyright &#169;<span id="year"></span> Sign-up Form | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        var year = new Date();
+        var newYear = year.getFullYear();
+        document.getElementById("year").innerHTML = newYear;
+
+        function submitForm() {
+            // Here you can add your form submission logic
+            // For example, you can validate the form fields and then submit the form using AJAX
+
+            // For demonstration purposes, this example just shows an alert
+            alert('Form submitted successfully!');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!-- the html code starts from here -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="My.jpg">
+	<script type="text/javascript">
+		function validate() {
+			var fullName = document.getElementById("fname");
+
+			if(fullName.value.length <= 2) {
+				document.getElementById("msgName").style.visibility="visible";
+				fullName.style.border = "solid 3px red";
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+		
+
+
+	</script>
+	<script type="text/javascript" src="index.js"></script>
+
+	
+</head>
+
+<body>
+
+	<div class="mainscreen">
+
+		<!-- Creating top hero text part -->
+		<div class="toppart">
+			<div class="herotext">
+				<h1> <img src="My.jpg" alt="Logo" class="logo"></h1>
+				<div class="wrapper">
+					<div class="static-text">I'm</div>
+					<ul class="dynamic-text">
+						<li><span> A CYBER MONK TOO📚💻</span></li>
+					</ul>
+				</div>
+				<p>
+					"Unlock Your Digital Journey: Dive into the World of Online Nomadism👊!!
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Creating bottom part form img and form -->
+	<div class="bottompart">
+		<!-- Image Part -->
+		<div class="imgpart">
+			<img src="Web-Development.jpg" class="heroimg" alt="">
+		</div>
+
+		<!-- Form Part -->
+		<div class="formpart">
+			<form onclick="return validate()">
+					<h2>Sign-up and get your Black box 🤗</h2>
+					<!-- For First Name -->
+					<label for="fname">First Name</label>
+					<input class="inputbox" id="fname" name="first_name" type="text" placeholder="Please enter your first name" autocomplete="off" required>
+					<small id="msgFirstName" style="visibility: hidden; color: red; position: absolute; top: 200px; right: 240px;">First Name should consist of more than 2 characters</small>
+
+					<!-- For Last Name -->
+					<label for="lname">Last Name</label>
+					<input class="inputbox" id="lname" name="last_name" type="text" placeholder="Please enter your last name" autocomplete="off" required>
+					<small id="msgLastName" style="visibility: hidden; color: red; position: absolute; top: 250px; right: 240px;">Last Name should consist of more than 2 characters</small>
+
+					<!-- For House Number -->
+					<label for="house_number">House Number</label>
+					<input class="inputbox" id="house_number" name="house_number" type="text" placeholder="Please enter your house number" autocomplete="off" required>
+					<small id="msgHouseNumber" style="visibility: hidden; color: red; position: absolute; top: 300px; right: 240px;">House Number should be provided</small>
+
+					<!-- For Street Name -->
+					<label for="street">Street Name</label>
+					<input class="inputbox" id="street" name="street_name" type="text" placeholder="Please enter your street name" autocomplete="off" required>
+					<small id="msgStreetName" style="visibility: hidden; color: red; position: absolute; top: 350px; right: 240px;">Street Name should be provided</small>
+
+					<!-- For Town/City -->
+					<label for="town">Town/City</label>
+					<input class="inputbox" id="town" name="town_city" type="text" placeholder="Please enter your town/city" autocomplete="off" required>
+					<small id="msgTownCity" style="visibility: hidden; color: red; position: absolute; top: 400px; right: 240px;">Town/City should be provided</small>
+
+					<!-- For County -->
+					<label for="county">County</label>
+					<input class="inputbox" id="county" name="county" type="text" placeholder="Please enter your county" autocomplete="off" required>
+					<small id="msgCounty" style="visibility: hidden; color: red; position: absolute; top: 450px; right: 240px;">County should be provided</small>
+
+					<!-- For Country -->
+					<label for="country">Country</label>
+					<input class="inputbox" id="country" name="country" type="text" placeholder="Please enter your country" autocomplete="off" required>
+					<small id="msgCountry" style="visibility: hidden; color: red; position: absolute; top: 500px; right: 240px;">Country should be provided</small>
+
+					<!-- For Postcode/Zipcode -->
+					<label for="postcode">Postcode/Zipcode</label>
+					<input class="inputbox" id="postcode" name="postcode_zipcode" type="text" placeholder="Please enter your postcode/zipcode" autocomplete="off" required>
+					<small id="msgPostcode" style="visibility: hidden; color: red; position: absolute; top: 550px; right: 240px;">Postcode/Zipcode should be provided</small>
+
+					<!-- For Username -->
+					<label for="username">Username</label>
+					<input class="inputbox" id="username" name="username" type="text" placeholder="Please enter your username" autocomplete="off" required>
+					<small id="msgUsername" style="visibility: hidden; color: red; position: absolute; top: 600px; right: 240px;">Username should be provided</small>
+
+					<!-- For Password -->
+					<label for="password">Password</label>
+					<input class="inputbox" id="password" name="password" type="password" placeholder="Please enter your password" autocomplete="off" required>
+					<small id="msgPassword" style="visibility: hidden; color: red; position: absolute; top: 650px; right: 240px;">Password should be provided</small>
+
+					<!-- For Repeat Password -->
+					<label for="repeat_password">Repeat Password</label>
+					<input class="inputbox" id="repeat_password" name="repeat_password" type="password" placeholder="Please repeat your password" autocomplete="off" required>
+					<small id="msgRepeatPassword" style="visibility: hidden; color: red; position: absolute; top: 700px; right: 240px;">Passwords should match</small>
+
+					<!-- For Phone Number -->
+					<label for="phone_number">Phone Number</label>
+					<input class="inputbox" id="phone_number" name="phone_number" type="tel" placeholder="Please enter your phone number" autocomplete="off" required>
+					<small id="msgPhoneNumber" style="visibility: hidden; color: red; position: absolute; top: 750px; right: 240px;">Phone Number should be provided</small>
+
+					<!-- Nature of business -->
+					<label for="business_nature">Nature of Business</label>
+					<input class="inputbox" id="business_nature" name="business_nature" type="text" placeholder="Please describe the nature of your business" autocomplete="off" required>
+					<small id="msgBusinessNature" style="visibility: hidden; color: red; position: absolute; top: 800px; right: 240px;">Nature of Business should be provided</small>
+
+					<!-- First idea for the name of business -->
+					<label for="business_name_1">First Idea for Business Name</label>
+					<input class="inputbox" id="business_name_1" name="business_name_1" type="text" placeholder="Please enter your first idea for the business name" autocomplete="off" required>
+					<small id="msgBusinessName1" style="visibility: hidden; color: red; position: absolute; top: 850px; right: 240px;">Business Name should be provided</small>
+
+					<!-- Second idea for the name of business -->
+					<label for="business_name_2">Second Idea for Business Name</label>
+					<input class="inputbox" id="business_name_2" name="business_name_2" type="text" placeholder="Please enter your second idea for the business name" autocomplete="off" required>
+					<small id="msgBusinessName2" style="visibility: hidden; color: red; position: absolute; top: 900px; right: 240px;">Business Name should be provided</small>
+
+					<!-- Third idea for the name of business -->
+					<label for="business_name_3">Third Idea for Business Name</label>
+					<input class="inputbox" id="business_name_3" name="business_name_3" type="text" placeholder="Please enter your third idea for the business name" autocomplete="off" required>
+					<small id="msgBusinessName3" style="visibility: hidden; color: red; position: absolute; top: 950px; right: 240px;">Business Name should be provided</small>
+					<!-- For user email to receive notes -->
+					<label for="email" style="margin-top: 0.5cm;">Email</label>
+					<input class="inputbox" id="email" type="email" class="email" name="email" placeholder="Please enter your email"
+					autocomplete="off" required>
+
+					<!-- For selecting course which email he wantss -->
+					<label for="course" style="margin-top: 0.5cm;">Select Subject</label>
+					<div class="options">
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="webDevelopment">
+						<label for="webDevelopment"><span>Phone Set-up</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="appDevelopment">
+						<label for="machineLearing"><span>Company Reg
+							
+						</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="artificialintelligence">
+						<label for="artificialintelligence"><span>Company URL</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="internetofthings">
+						<label for="internetofthings"><span>Merchant Trading</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="machineLearning">
+						<label for="internetofthings"><span>Company Email</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="deepLearning">
+						<label for="internetofthings"><span>Business Account</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="cloudComputing">
+						<label for="internetofthings"><span>Customer Support</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="cyberSecurity">
+						<label for="internetofthings"><span>Cyber Security</span></label>
+						</div>	
+					</div>
+
+
+					<!-- For Agree line and checkbox -->
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">Yes, I want to receive promotional emails and updates concerning Web development, Machine Learning, Artificial Intelligence, and Internet of Things.</label>
+					<!-- For Agree line and checkbox -->
+					<br>
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">I authorize Cybermonk to act on my behalf during account opening procedures, with the understanding that this authorization does not extend exclusively to document signing.</label>
+					<br>
+
+					<!-- For Agree line and checkbox -->
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">I agree to authorize Cybermonk to deduct monthly payments of £10 upon purchasing the £210 package.</label>
+					
+
+					<!-- For Privacy Policy Line -->
+					<label class="privacy_policy">By clicking the submit button, you agree to our <span>Terms &
+							Conditions</span> and <span>Privacy Policy</span>.</label>
+
+
+					<!-- For Submit Button
+					<button type="submit">Submit</button>
+					-->
+					<button class="submit-button state-0"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+	<footer id="footer">
+
+		<!-- entering username of the social media accounts from which the user may contact	       -->
+	      
+			<a href="https://github.com/pandeyom331"><i class="git fab fa-github fa-2x "></i></a>
+			<a href="https://www.facebook.com/profile.php?id=100004398076666"><i class="git fab fa-facebook-f fa-2x"></i></a>
+			<a href="https://www.instagram.com/solo_thinker_134/"><i class="git fab fa-instagram fa-2x"></i></a>
+			<a class="email" href="mailto:pandeyom305@gmail.com"><i class="git fas fa-envelope fa-2x"></i></a>
+			<p>Copyright &#169;<span id="year"></span> Sign-up Form | All Rights Reserved</p>
+
+	</footer>
+
+		<script>
+			var year = new Date();
+			var newYear = year.getFullYear();
+			document.getElementById("year").innerHTML = newYear;
+		</script>
+
+</body>
+</html>
