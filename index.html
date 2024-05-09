@@ -1,509 +1,259 @@
+<!-- the html code starts from here -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> CYBER-MONK  | Home</title>
-    <link rel="icon" href="https://img.icons8.com/color/48/000000/cisco-anyconnect--v1.png" type="image/png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.green.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="My.jpg">
+	<script type="text/javascript">
+		function validate() {
+			var fullName = document.getElementById("fname");
+
+			if(fullName.value.length <= 2) {
+				document.getElementById("msgName").style.visibility="visible";
+				fullName.style.border = "solid 3px red";
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+		
+
+
+	</script>
+	<script type="text/javascript" src="index.js"></script>
+
+	
 </head>
-<body onload="typeWriter()">
 
-    <header class="bg-light" id="scroll">
-        <nav class="navbar navbar-expand-md navbar-light container py-3">
-            <a class="navbar-brand font-weight-bold text-uppercase" href="index.html"> CYBER-MONK </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active_page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link get-btn" href="#">Get in Touch</a>
-                </li>    
-                </ul>
-            </div>  
-        </nav>
-    </header>
-    <section>
-        <div class="jumbotron-fluid">
-            <div class="container hero">
-                <div class="heading">
-                    <h1 id="type">Streamline operations; enhance security, boost growth with  CYBER-MONK's services, </h1>
-                    <p class="pt-2 sub-head"> CYBER-MONK provides comprehensive tech solutions, including web design, cybersecurity and consultancy.</p>
-                    <a href="contact.html#form"><button class="read_more mt-2">Get in Touch</button></a>
-                </div>
-                <div class="bg">
-                    <img src="assets/background.svg" alt="bg">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="need">
-        <div class="container">
-            <h2 class="text-center mt-5"><span class="highlight">How</span> business with us will beneifit you?</h2>
-            <p class="pt-4 text-center"> CYBER-MONK is a forward-thinking company that is committed to closing gaps and fostering business growth. With our holistic approach centered around meaningful human connections, we guarantee outstanding service and unparalleled customer satisfaction. Specializing in tailoring solutions to elevate corporate identities and propel achievements, we pave the way for lasting success.</p>
-        </div>
-    </section>
-    <section>
-        <div class="container service">
-            <h2 class="text-center"><span class="highlight">Services</span> we can help you with</h2>
-            <div class="service_head">
-                <div class="box" data-aos="zoom-in">
-                    <img src="assets/web_design.svg" alt="">
-                    <h4>Digital Presence Solutions</h4>
-                    <small class="">Boost your online presence with our custom websites, seamless e-commerce platforms, and secure payment gateways. Drive business growth with our tailored digital solutions.</small>
-                    <a href="services.html#web_design"><button class="read_more">Read more</button></a>
-                </div>
-                <div class="box" data-aos="zoom-in">
-                    <img src="assets/web_development.svg" alt="">
-                    <h4> Business Optimization Services</h4>
-                    <small>Optimize your operations with our cloud integration, data management, and cybersecurity solutions. Ensure efficiency and security to stay ahead in today's competitive landscape.</small>
-                    <a href="services.html#web_dev"><button class="read_more">Read more</button></a>
-                </div>
-                <div class="box" data-aos="zoom-in">
-                    <img src="assets/digital_marketing.svg" alt="">
-                    <h4>Financial Management Solutions</h4>
-                    <small>Handle your finances seamlessly with our accounting, bookkeeping, and online banking services. Trust us to keep your financial matters in order while you focus on business growth.</small>
-                    <a href="services.html#digital_marketing"><button class="read_more">Read more</button></a>
-                </div>
-                <div class="box" data-aos="zoom-in">
-                    <img src="assets/app_developement.svg" alt="">
-                    <h4>Consultancy and Advisory Services</h4>
-                    <small>Gain strategic insights and optimize your sales and tech processes with our expert consultancy. We provide tailored solutions to bridge gaps and drive success.</small>
-                    <a href="services.html#app_dev"><button class="read_more">Read more</button></a>
-                </div>
-                <div class="box" data-aos="zoom-in">
-                    <img src="assets/logo_design.svg" alt="">
-                    <h4>Virtual Office Solutions</h4>
-                    <small>Experience the flexibility of virtual offices with our comprehensive solutions. From business registration to virtual office setup, we provide seamless tools for a professional presence.</small>
-                    <a href="services.html#logo_design"><button class="read_more">Read more</button></a>
-                </div>
-                <div class="box" data-aos="zoom-in">
-                    <img src="assets/ecommerce.svg" alt="">
-                    <h4>Language and Sales Training for Business Success</h4>
-                    <small>Equip your team with vital business English and sales skills for global competitiveness. Elevate communication and sales proficiency to drive growth and expand your market reach..</small>
-                    <a href="services.html#ecommerce_site"><button class="read_more">Read more</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="tech_use">
-        <div class="container">
-            <h2 class="text-center mt-5"><span class="highlight">Technology</span> we use</h2>
-            <div class="owl-one owl-carousel owl-theme mt-5">
-                <div class="item">
-                    <img src="assets/angular.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/mongodb.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/bootstrap.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/mysql.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/react.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/php.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/java.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/nodejs.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/jquery.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="plan">
-        <div class="container">
-            <h2 class="text-center mt-5">Choose a <span class="highlight">plan</span> that is right for your business</h2>
-            <div class="price_box">
-                <div class="free">
-                    <h4 class="highlight">Startup Tech</h4>
-                    <p>Basic</p>
-                    <h1 class="mt-4"><span class="dollar">£</span>50<span class="Month">/Plan</span></h1>
-                    <hr>
-                    <p>Registration</p>
-                    <p>Setup of virtual office and address</p>
-                    <p>Banking</p>
-                    <p>Accounting software</p>
-                    <p>Website design</p>
+<body>
 
-                    
-                    
-                    <a href="Sign-Up-Form-main/index.html"><button class="order_btn mt-4">Order now</button></a>
-                </div>
-                <div class="free"> <!--basic-->
-                    <h4 class="highlight">Consultancy</h4>
-                    <p>Reports</p>
-                    <h1 class="mt-4"><span class="dollar">£</span>150<span class="Month">/Plan</span></h1>
-                    <hr>
-                    <p>Subscription Clarity: Clear subscription costs.</p>
-                    <p>AI Automation: Tasks automated smartly.</p>
-                    <p>Seamless Integration: Tech setup managed.</p>
-                    <p>Expert Consultation: Technology stack guidance.</p>
-                    
-                    <button class="order_btn mt-4">Order now</button>
-                </div>
-                
-                <div class="free"> <!--business-->
-                    <h4 class="highlight">Cloud Intergration</h4>
-                    <p>businesses & stores</p>
-                    <h1 class="mt-4"><span class="dollar">£</span>400<span class="Month">/Plan</span></h1>
-                    <hr>
-                    <p>Analysis</p>
-                    <p>Consultations</p>
-                    <p>Implication</p>
-                    <p>Installation</p>
-                    <p>Training</p>
-                    <p>Ongoing support</p>
+	<div class="mainscreen">
 
-                    <button class="order_btn mt-4">Order now</button>
-                </div>
-                <div class="free"> <!--unlimited-->
-                    <h4 class="highlight">Full Managment</h4>
-                    <p>Small to large businesses</p>
-                    <h1 class="mt-4"><span class="dollar">£</span>2000<span class="Month">/Plan</span></h1>
-                    <hr>
-                    <p>Comprehensive Setup: All-inclusive groundwork.</p>
-                    <p>Financial Forecasting: Informed decision-making.</p>
-                    <p>Dedicated Management: Expert oversight assured.</p>
-                    <p>Strategic Growth Initiatives: Business expansion facilitated.</p>
-                    <button class="order_btn mt-4">Order now</button>
-                </div>
-            </div> 
-        </div>
-    </section>
-    <div class="count">
-        <h2 class="text-center mt-5">We done many <span class="highlight">projects</span></h2>
-    </div>
-    <section class="project">    
-        <div class="container">
-        <div class="project_count">
-                <div>
-                    <img src="https://img.icons8.com/bubbles/150/000000/domain.png"/>
-                    <h1 class="num">5</h1>
-                    <p>Websites renewed</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/bubbles/150/000000/active-male.png"/>
-                    <h1 class="num">7</h1>
-                    <p>Active members</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/bubbles/150/000000/user-male-circle.png"/>
-                    <h1 class="num">19</h1>
-                    <p>Happy clients</p>
-                </div>     
-                <div>
-                    <img src="https://img.icons8.com/bubbles/150/000000/edit-file.png"/>
-                    <h1 class="num">20</h1>
-                    <p>Total projects</p>
-                </div>           
-        </div>
-        </div>
-        
-    </section>
+		<!-- Creating top hero text part -->
+		<div class="toppart">
+			<div class="herotext">
+				<h1> <img src="My.jpg" alt="Logo" class="logo"></h1>
+				<div class="wrapper">
+					<div class="static-text">I'm</div>
+					<ul class="dynamic-text">
+						<li><span> A CYBER MONK TOO📚💻</span></li>
+					</ul>
+				</div>
+				<p>
+					"Unlock Your Digital Journey: Dive into the World of Online Nomadism👊!!
+				</p>
+			</div>
+		</div>
 
-    <!-- re ad the section below when ai pictures andd video is made-->
-    <!--    <section class="team">
-        <div class="container">
-            <h2 class="text-center mt-5">Our <span class="highlight">team</span></h2>
-            <p class="pt-4 text-center">Meet out small team that make those great products.</p>
-            <div class="profile_card">
-                <div class="card">
-                    <img src="assets/people_1.jpg" alt="">
-                    <h5 class="pt-4">Nishi Paul</h5>
-                    <small>UI/UX Designer</small>
-                    <div class="social">
-                        <div class="linkedin">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </div>
-                        <div class="twitter">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </div>
-                        <div class="instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/people_2.jpg" alt="">
-                    <h5 class="pt-4">Sharen Kour</h5>
-                    <small>Web Developer</small>
-                    <div class="social">
-                        <div class="linkedin">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </div>
-                        <div class="twitter">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </div>
-                        <div class="instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/people_3.jpg" alt="">
-                    <h5 class="pt-4"> Chandan Naiya</h5>
-                    <small>SEO Expert</small>
-                    <div class="social">
-                        <div class="linkedin">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </div>
-                        <div class="twitter">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </div>
-                        <div class="instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/people_4.jpg" alt="">
-                    <h5 class="pt-4">B.Chakraborty</h5>
-                    <small>HR Head</small>
-                    <div class="social">
-                        <div class="linkedin">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </div>
-                        <div class="twitter">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </div>
-                        <div class="instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!--
-    <section class="blog">
-        <div class="container">
-            <h2 class="text-center mt-5">Our <span class="highlight">blogs</span></h2>
-            <p class="pt-4 text-center">Check out some recent news posts.</p>
-            <div class="blog_box owl-two owl-carousel owl-theme">
-                <div class="blog_card item">
-                    <img src="./assets/blog_1.png" alt="">
-                    <small class="pt-4 pl-4 pr-4">Jan 21, 2019 &nbsp;  &nbsp; <span>45 Comments</span></small>
-                    <h5 class="pr-4 pl-4 py-2">How SEO Los Angeles Works & Web Design Company — ClapCreative</h5>
-                    <small class="pr-4 pl-4">It’s an excellent time to begin a business. With the potential that digital platforms have to provide, your brand will probably reach new heights and succeed amid powerful competition in your business.</small>
-                    <button class="mr-4 ml-3 my-4 blog_btn">Read more
-                        <span>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="blog_card item">
-                    <img src="./assets/blog_5.png" alt="">
-                    <small class="pt-4 pl-4 pr-4">Jan 21,  2024 &nbsp;  &nbsp;  <span>56 Comments</span></small>
-                    <h5 class="pr-4 pl-4 py-2">Why you need website for your Business?</h5>
-                    <small class="pr-4 pl-4"> CYBER-MONK  create your website from the scratch. We believe that best web design always encompasses many different skills and disciplines in the production and maintenance. So contact us now for more details.</small>
-                    <button class="mr-4 ml-3 my-4 blog_btn">Read more
-                        <span>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="blog_card item">
-                    <img src="./assets/blog_3.png" alt="">
-                    <small class="pt-4 pl-4 pr-4">Dec 11, 2017 &nbsp;  &nbsp;  <span>33 Comments</span></small>
-                    <h5 class="pr-4 pl-4 py-2">Google now says controversial AI  voice calling system will identify itself to humans.</h5>
-                    <small class="pr-4 pl-4"> CYBER-MONK  create your website from the scratch. We believe that best web design always encompasses many different skills and disciplines in the production and maintenance. So contact us now for more details</small>
-                    <button class="mr-4 ml-3 my-4 blog_btn">Read more
-                        <span>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="blog_card item">
-                    <img src="./assets/blog_4.png" alt="">
-                    <small class="pt-4 pl-4 pr-4">Mar 14, 2019 &nbsp;  &nbsp;  <span>75 Comments</span></small>
-                    <h5 class="pr-4 pl-4 py-2">SEO Hacks to Improve Your Google Ranking. </h5>
-                    <small class="pr-4 pl-4">It’s an excellent time to begin a business. With the potential that digital platforms have to provide, your brand will probably reach new heights and succeed amid powerful competition in your business.</small>
-                    <button class="mr-4 ml-3 my-4 blog_btn">Read more
-                        <span>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-    <section class="arrow_up">
-    <a class="gotopbtn" href="#scroll">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a>
-    <footer>
-        <div class="container">
-            <div class="info">
-                <div>
-                    <h4>Company Info</h4>
-                    <small>Home</small>
-                    <small>About Company</small>
-                    <small>Life at  CYBER-MONK   </small>
-                    <small>Our Story</small>
-                    <small>Testimonials</small>
-                    <small>CSR activities</small>
-                    <small>Recognition</small>
-                    <small><a href="pp.html">Privacy Policy</a></small>
-                    <small><a href="tos.html">Terms of service</a></small>
-                </div>
-                <div>
-                    <h4>Our Services</h4>
-                    <small>Financial Services</small>
-                        <small>Cybersecurity Consultation</small>
-                        <small>Business Setup and Support</small>
-                        <small>Technology Solutions</small>
-                        <small>Website Solutions</small>
-                        <small>Search Engine Optimization (SEO)</small>
-                        <small>Cloud Services</small>
-                        <small>Social Media Marketing</small>
-                        <small>Consultancy Services</small>
-                </div>
+	</div>
 
-                <div>
-                    <h4>Affiliate Links</h4>
-                    <small><a href="sitemap.html">Site Map</a></small>
-                    <a href="comingsoon.html"><small>FreshBooks</small>
-                    <small>Anna</small>
-                    <small>Instant Offices</small>
-                    <small>Regus / Servcorp UK</small>
-                    <small>AWS (Amazon Web Services)</small>
-                    <small>Linode</small>
-                    <small>Google Cloud Platform</small>
-                    <small>Shopify</small>
-                    <small>Stripe</small></a>
+	<!-- Creating bottom part form img and form -->
+	<div class="bottompart">
+		<!-- Image Part -->
+		<div class="imgpart">
+			<img src="Web-Development.jpg" class="heroimg" alt="">
+		</div>
 
-                </div>
-                <div>
-                    <h4>Contact Us</h4>
-                    <small>Marlow, UK</small>
-                    <small></small>
-                    <small>+44 7425 854 681</small>
-                    <small>+44 118 328 2440</small>
-                    <small>connect@reiki.digital</small>
-                    <small>Thank you for visiting our site</small>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <small class="text-center">Copyright ©  CYBER-MONK  , 2024. All Rights Reserved.</small>
-        </div>
-    </footer>
-    
-    
+		<!-- Form Part -->
+		<div class="formpart">
+			<form onclick="return validate()">
+					<h2>Sign-up and get your Black box 🤗</h2>
+					<!-- For First Name -->
+					<label for="fname">First Name</label>
+					<input class="inputbox" id="fname" name="first_name" type="text" placeholder="Please enter your first name" autocomplete="off" required>
+					<small id="msgFirstName" style="visibility: hidden; color: red; position: absolute; top: 200px; right: 240px;">First Name should consist of more than 2 characters</small>
 
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+					<!-- For Last Name -->
+					<label for="lname">Last Name</label>
+					<input class="inputbox" id="lname" name="last_name" type="text" placeholder="Please enter your last name" autocomplete="off" required>
+					<small id="msgLastName" style="visibility: hidden; color: red; position: absolute; top: 250px; right: 240px;">Last Name should consist of more than 2 characters</small>
 
-        // Own Carosel Effect //
-        
-        $( document ).ready(function() {
-            $('.owl-one').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-            });
+					<!--dob-->
+					<!-- For Date of Birth -->
+					<label for="dob">Date of Birth</label>
+					<input class="inputbox" id="dob" name="date_of_birth" type="date" placeholder="Please enter your date of birth" autocomplete="off" required>
 
-            $('.owl-two').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-            });
 
-            $('.num').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        
-        });
+					<!-- For House Number -->
+					<label for="house_number">House Number</label>
+					<input class="inputbox" id="house_number" name="house_number" type="text" placeholder="Please enter your house number" autocomplete="off" required>
+					<small id="msgHouseNumber" style="visibility: hidden; color: red; position: absolute; top: 300px; right: 240px;">House Number should be provided</small>
 
-        // AOS Animation //
+					<!-- For Nationality -->
+					<label for="nationality">Nationality</label>
+					<input class="inputbox" id="nationality" name="nationality" type="text" placeholder="Please enter your nationality" autocomplete="off" required>
 
-        AOS.init({
-            duration: 1000,
-        });
 
-        // Typewriting Effect //
+					<!-- For Street Name -->
+					<label for="street">Street Name</label>
+					<input class="inputbox" id="street" name="street_name" type="text" placeholder="Please enter your street name" autocomplete="off" required>
+					<small id="msgStreetName" style="visibility: hidden; color: red; position: absolute; top: 350px; right: 240px;">Street Name should be provided</small>
 
-        var i = 0;
-        var txt = ' also build systems that solve problems'; /* The text */
-        var speed = 80; /* The speed/duration of the effect in milliseconds */
+					<!-- For Town/City -->
+					<label for="town">Town/City</label>
+					<input class="inputbox" id="town" name="town_city" type="text" placeholder="Please enter your town/city" autocomplete="off" required>
+					<small id="msgTownCity" style="visibility: hidden; color: red; position: absolute; top: 400px; right: 240px;">Town/City should be provided</small>
 
-        function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("type").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-        }
+					<!-- For County -->
+					<label for="county">County</label>
+					<input class="inputbox" id="county" name="county" type="text" placeholder="Please enter your county" autocomplete="off" required>
+					<small id="msgCounty" style="visibility: hidden; color: red; position: absolute; top: 450px; right: 240px;">County should be provided</small>
 
-    </script>
+					<!-- For Country -->
+					<label for="country">Country</label>
+					<input class="inputbox" id="country" name="country" type="text" placeholder="Please enter your country" autocomplete="off" required>
+					<small id="msgCountry" style="visibility: hidden; color: red; position: absolute; top: 500px; right: 240px;">Country should be provided</small>
+
+					<!-- For Postcode/Zipcode -->
+					<label for="postcode">Postcode/Zipcode</label>
+					<input class="inputbox" id="postcode" name="postcode_zipcode" type="text" placeholder="Please enter your postcode/zipcode" autocomplete="off" required>
+					<small id="msgPostcode" style="visibility: hidden; color: red; position: absolute; top: 550px; right: 240px;">Postcode/Zipcode should be provided</small>
+
+					<!-- For Username -->
+					<label for="username">Username</label>
+					<input class="inputbox" id="username" name="username" type="text" placeholder="Please enter your username" autocomplete="off" required>
+					<small id="msgUsername" style="visibility: hidden; color: red; position: absolute; top: 600px; right: 240px;">Username should be provided</small>
+
+					<!-- For Password -->
+					<label for="password">Password</label>
+					<input class="inputbox" id="password" name="password" type="password" placeholder="Please enter your password" autocomplete="off" required>
+					<small id="msgPassword" style="visibility: hidden; color: red; position: absolute; top: 650px; right: 240px;">Password should be provided</small>
+
+					<!-- For Repeat Password -->
+					<label for="repeat_password">Repeat Password</label>
+					<input class="inputbox" id="repeat_password" name="repeat_password" type="password" placeholder="Please repeat your password" autocomplete="off" required>
+					<small id="msgRepeatPassword" style="visibility: hidden; color: red; position: absolute; top: 700px; right: 240px;">Passwords should match</small>
+
+					<!-- For Phone Number -->
+					<label for="phone_number">Phone Number</label>
+					<input class="inputbox" id="phone_number" name="phone_number" type="tel" placeholder="Please enter your phone number" autocomplete="off" required>
+					<small id="msgPhoneNumber" style="visibility: hidden; color: red; position: absolute; top: 750px; right: 240px;">Phone Number should be provided</small>
+
+					<!-- Nature of business -->
+					<label for="business_nature">Nature of Business</label>
+					<input class="inputbox" id="business_nature" name="business_nature" type="text" placeholder="Please describe the nature of your business" autocomplete="off" required>
+					<small id="msgBusinessNature" style="visibility: hidden; color: red; position: absolute; top: 800px; right: 240px;">Nature of Business should be provided</small>
+
+					<!-- For Number of Shareholders -->
+					<label for="num_shareholders">Number of Shareholders</label>
+					<input class="inputbox" id="num_shareholders" name="num_shareholders" type="number" placeholder="Please enter the number of shareholders" autocomplete="off" required>
+
+					<!-- For Shareholders' Contact Emails -->
+					<label for="shareholder_emails">Shareholders' Contact Emails</label>
+					<input class="inputbox" id="shareholder_emails" name="shareholder_emails" type="email" placeholder="Please enter the contact emails of shareholders" autocomplete="off" required>
+
+
+					<!-- First idea for the name of business -->
+					<label for="business_name_1">First Idea for Business Name</label>
+					<input class="inputbox" id="business_name_1" name="business_name_1" type="text" placeholder="Please enter your first idea for the business name" autocomplete="off" required>
+					<small id="msgBusinessName1" style="visibility: hidden; color: red; position: absolute; top: 850px; right: 240px;">Business Name should be provided</small>
+
+					<!-- Second idea for the name of business -->
+					<label for="business_name_2">Second Idea for Business Name</label>
+					<input class="inputbox" id="business_name_2" name="business_name_2" type="text" placeholder="Please enter your second idea for the business name" autocomplete="off" required>
+					<small id="msgBusinessName2" style="visibility: hidden; color: red; position: absolute; top: 900px; right: 240px;">Business Name should be provided</small>
+
+					<!-- Third idea for the name of business -->
+					<label for="business_name_3">Third Idea for Business Name</label>
+					<input class="inputbox" id="business_name_3" name="business_name_3" type="text" placeholder="Please enter your third idea for the business name" autocomplete="off" required>
+					<small id="msgBusinessName3" style="visibility: hidden; color: red; position: absolute; top: 950px; right: 240px;">Business Name should be provided</small>
+					<!-- For user email to receive notes -->
+					<label for="email" style="margin-top: 0.5cm;">Email</label>
+					<input class="inputbox" id="email" type="email" class="email" name="email" placeholder="Please enter your email"
+					autocomplete="off" required>
+
+					<!-- For selecting course which email he wantss -->
+					<label for="course" style="margin-top: 0.5cm;">Select Subject</label>
+					<div class="options">
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="webDevelopment">
+						<label for="webDevelopment"><span>Phone Set-up</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="appDevelopment">
+						<label for="machineLearing"><span>Company Reg
+							
+						</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="artificialintelligence">
+						<label for="artificialintelligence"><span>Company URL</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="internetofthings">
+						<label for="internetofthings"><span>Merchant Trading</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="machineLearning">
+						<label for="internetofthings"><span>Company Email</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="deepLearning">
+						<label for="internetofthings"><span>Business Account</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="cloudComputing">
+						<label for="internetofthings"><span>Customer Support</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="cyberSecurity">
+						<label for="internetofthings"><span>Cyber Security</span></label>
+						</div>	
+					</div>
+
+
+					<!-- For Agree line and checkbox -->
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">Yes, I want to receive promotional emails and updates concerning Web development, Machine Learning, Artificial Intelligence, and Internet of Things.</label>
+					<!-- For Agree line and checkbox -->
+					<br>
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">I authorize Cybermonk to act on my behalf during account opening procedures, with the understanding that this authorization does not extend exclusively to document signing.</label>
+					<br>
+
+					<!-- For Agree line and checkbox -->
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">I agree to authorize Cybermonk to deduct monthly payments of £10 upon purchasing the £210 package.</label>
+					
+
+					<!-- For Privacy Policy Line -->
+					<label class="privacy_policy">By clicking the submit button, you agree to our <span>Terms &
+							Conditions</span> and <span>Privacy Policy</span>.</label>
+
+
+					<!-- For Submit Button
+					<button type="submit">Submit</button>
+					-->
+					<button class="submit-button state-0"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+	<footer id="footer">
+
+		<!-- entering username of the social media accounts from which the user may contact	       -->
+	      
+			<a href="https://github.com/pandeyom331"><i class="git fab fa-github fa-2x "></i></a>
+			<a href="https://www.facebook.com/profile.php?id=100004398076666"><i class="git fab fa-facebook-f fa-2x"></i></a>
+			<a href="https://www.instagram.com/solo_thinker_134/"><i class="git fab fa-instagram fa-2x"></i></a>
+			<a class="email" href="mailto:pandeyom305@gmail.com"><i class="git fas fa-envelope fa-2x"></i></a>
+			<p>Copyright &#169;<span id="year"></span> Sign-up Form | All Rights Reserved</p>
+
+	</footer>
+
+		<script>
+			var year = new Date();
+			var newYear = year.getFullYear();
+			document.getElementById("year").innerHTML = newYear;
+		</script>
+
 </body>
 </html>
